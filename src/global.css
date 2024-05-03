@@ -1,0 +1,19 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#F5F5F5]
+}
+
+@layer base {
+  @font-face {
+    font-family: "Georgia";
+    font-display: swap;
+    src: url(/fonts/georgia.woff2) format("woff2");
+  }
+}
