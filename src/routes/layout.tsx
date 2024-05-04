@@ -26,7 +26,6 @@ export default component$(() => {
     <HeadGradBlur />
       <main class="flex flex-col items-center">
         <Slot />
-        <div class="h-screen" />
       </main>
     </>
   );
