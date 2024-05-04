@@ -1,6 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import { FooterGradBlur } from "~/components/FooterGradBlur";
 import { HeadGradBlur } from "~/components/HeadGradBlur";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -27,6 +28,7 @@ export default component$(() => {
       <main class="flex flex-col items-center">
         <Slot />
       </main>
+      <FooterGradBlur />
     </>
   );
 });
