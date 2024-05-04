@@ -1,13 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import SawanImage from "../media/sawan.png?jsx";
-import TzkImage from "../media/truezk.png?jsx";
-import MapImage from "../media/map.png?jsx";
+import SawanImage from "~/media/sawan.png?jsx";
+import TzkImage from "~/media/truezk.png?jsx";
+import MapImage from "~/media/map.png?jsx";
 
 export default component$(() => {
   return (
-    <div class="flex flex-col font-georgia pt-20 text-xl md:text-4xl">
+    <div class="flex flex-col font-serif pt-20 text-xl md:text-4xl antialiased">
       <div class="flex items-center gap-2">
         <span class="text-light">Hey,</span>
         <span class="text-dark">I’m</span>
