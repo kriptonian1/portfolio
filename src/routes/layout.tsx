@@ -1,6 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import { HeadGradBlur } from "~/components/HeadGradBlur";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -22,8 +23,10 @@ export const useServerTimeLoader = routeLoader$(() => {
 export default component$(() => {
   return (
     <>
-      <main class="flex justify-center">
+    <HeadGradBlur />
+      <main class="flex flex-col items-center">
         <Slot />
+        <div class="h-screen" />
       </main>
     </>
   );
