@@ -36,15 +36,17 @@ export default component$(() => {
         <div class="flex items-center gap-2 md:-translate-y-8">
           <span class="text-light">based in</span>
           <span class="text-dark">Kolkata,</span>
+
           <MapImage
             alt="Kolkata's Map"
             draggable={false}
             class="w-10 -translate-x-2 translate-y-3 md:w-24"
           />
+
           <span class="-translate-x-4 text-dark">IN</span>
         </div>
       </h1>
-      <div class="text-middle mt-10 flex gap-x-6 font-light md:mt-0">
+      <div class="mt-10 flex gap-x-6 font-light text-middle md:mt-0">
         <a
           href="https://twitter.com/kriptonian8"
           target="_blank"
@@ -75,7 +77,7 @@ export default component$(() => {
         </a>
       </div>
       <Saperator />
-      <div class="text-middle w-[20rem] text-xs font-light md:w-auto md:text-sm">
+      <div class="w-[20rem] text-xs font-light text-middle md:w-auto md:text-sm">
         I'm a full-stack developer with a passion for building web applications.
         I'm currently working at TrueZK, building the future of modular
         blockchains networks.
@@ -90,7 +92,11 @@ export default component$(() => {
         them. Me and my friends are working on a project called{" "}
         <span class="underline ">
           {" "}
-          <a href="https://keyshade.xyz/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://keyshade.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Keyshade.
           </a>{" "}
         </span>
@@ -101,7 +107,7 @@ export default component$(() => {
       <Saperator />
       <div class="flex flex-col gap-10">
         <div class="text-middle">Work Experience</div>
-        <div class="text-middle md:flex gap-10 text-sm font-light">
+        <div class="gap-10 text-sm font-light text-middle md:flex">
           <div class="w-32">June '23</div>
           <div class="flex items-center">
             Founding Full-stack Dev at{" "}
@@ -124,8 +130,8 @@ export default component$(() => {
             TrueZK
           </div>
         </div>
-        <div class="text-middle md:flex gap-10 text-sm font-light ">
-          <div class="w-32">Mar - May 2023</div>
+        <div class="gap-10 text-sm font-light text-middle md:flex ">
+          <div class="w-32">Mar - May '23</div>
           <div class="flex items-center">
             Frontend Devloper Intern at{" "}
             <span class="mx-1">
@@ -147,7 +153,7 @@ export default component$(() => {
             HealthBarosa
           </div>
         </div>
-        <div class="text-middle md:flex gap-10 text-sm font-light ">
+        <div class="gap-10 text-sm font-light text-middle md:flex ">
           <div class="w-32">May '22 - Feb '23</div>
           <div class="flex items-center">
             Frontend Devloper Intern at{" "}

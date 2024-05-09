@@ -6,14 +6,37 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-[#F5F5F5]
-}
-
 @layer base {
+  body {
+    @apply bg-cream;
+  }
   @font-face {
     font-family: "Georgia";
     font-display: swap;
     src: url(/fonts/georgia.woff2) format("woff2");
+  }
+}
+
+@layer utilities {
+  .tabPillBG {
+    @apply bg-[#FFFFFF1A];
+    box-shadow:
+      0 12px 12px -6px #1a1a1a1f,
+      0 5px 5px -2.5px #1a1a1a0f,
+      0 3px 3px -1.5px #1a1a1a0f,
+      0 2px 2px -1px #1a1a1a14,
+      0 1px 1px -0.5px #1a1a1a14,
+      0 4px 16px #ffffff29 inset,
+      0 0.5px 0.5px #ffffff3d inset;
+  }
+  .shadow-nav {
+    @apply drop-shadow-xl;
+    box-shadow:
+      0 0.5px 0.5px #ffffff29 inset,
+      0 0 0 1px #000000c4,
+      0 41px 17px #00000008,
+      0 23px 14px #0000001a,
+      0 10px 10px #0000002b,
+      0 3px 6px #00000030;
   }
 }

@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export const FooterGradBlur = component$(() => {
   return (
-    <div class="fixed inset-x-0 bottom-0 isolate z-10 h-14 w-full">
+    <div class="fixed inset-x-0 bottom-0 isolate z-10 h-28 w-full">
       <div
         style={{
           maskImage:

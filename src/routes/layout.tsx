@@ -3,6 +3,7 @@ import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { FooterGradBlur } from "~/components/FooterGradBlur";
 import { HeadGradBlur } from "~/components/HeadGradBlur";
+import { NavDocker } from "~/components/NavDocker";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -25,8 +26,9 @@ export default component$(() => {
   return (
     <>
     <HeadGradBlur />
-      <main class="flex flex-col items-center">
+      <main class="flex flex-col items-center antialiased">
         <Slot />
+        <NavDocker />
         <div class="h-[10rem]" />
       </main>
       <FooterGradBlur />
