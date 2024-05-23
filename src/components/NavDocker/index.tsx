@@ -25,7 +25,7 @@ export const NavDocker = component$(() => {
     },
     {
       name: "Resume",
-      href: "https://media.licdn.com/dms/document/media/D4D2DAQE8e1AT4P_JnA/profile-treasury-document-pdf-analyzed/0/1713907008052?e=1716422400&v=beta&t=eL4qwE2OsD1NaeT4C1BF6-Smzg9mFJH05JrR5V3ke2A",
+      href: "/CV_Sawan_Bhattacharya.pdf",
     },
     {
       name: "Contact",
