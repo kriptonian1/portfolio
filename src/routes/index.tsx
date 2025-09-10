@@ -1,114 +1,90 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import SawanImage from "~/media/sawan.png?jsx";
-import TzkImage from "~/media/truezk.png?jsx";
-import MapImage from "~/media/map.png?jsx";
 import { Saperator } from "~/components/Saperator";
+import { Bio } from "~/components/Sections/Bio";
+import { Heading } from "~/components/Sections/Heading";
+import { Socials } from "~/components/Sections/Socials";
 
 export default component$(() => {
   return (
-    <div class="md:w-[30rem]">
+    <div class="translate-x-[3rem] md:w-[40rem]">
       {" "}
-      <h1 class="flex flex-col pt-20 font-serif text-2xl antialiased md:text-4xl">
-        <div class="flex items-center gap-2">
-          <span class="text-light">Hey,</span>
-          <span class="text-dark">I’m</span>
-          <SawanImage
-            alt="sawan's image"
-            draggable={false}
-            class="w-10 md:w-20"
-          />
-          <span class="text-dark">Sawan</span>
-        </div>
-        <div class="flex items-center gap-2 md:-translate-y-4">
-          <span class="bg-gradient-to-r from-violet-500 to-blue-500 bg-clip-text text-transparent">
-            a full-stack
-          </span>
-          <span class="text-light">at</span>
-          <TzkImage
-            alt="TrueZk's Logo"
-            draggable={false}
-            class="aspect-square w-10 -translate-x-2 md:w-24"
-          />
-          <span class="-translate-x-4 text-dark">TrueZK</span>
-        </div>
-        <div class="flex items-center gap-2 md:-translate-y-8">
-          <span class="text-light">based in</span>
-          <span class="text-dark">Kolkata,</span>
-
-          <MapImage
-            alt="Kolkata's Map"
-            draggable={false}
-            class="w-10 -translate-x-2 translate-y-3 md:w-24"
-          />
-
-          <span class="-translate-x-4 text-dark">IN</span>
-        </div>
-      </h1>
-      <div class="mt-10 flex gap-x-6 font-light text-middle md:mt-0">
-        <a
-          href="https://twitter.com/kriptonian8"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sawan-bhattacharya/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/kriptonian1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://dev.to/kriptonian"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Dev.to
-        </a>
-      </div>
+      <Heading />
+      <Socials />
       <Saperator />
-      <div class="w-[20rem] text-xs font-light text-middle md:w-auto md:text-sm">
-        I'm a full-stack developer with a passion for building web applications.
-        I'm currently working at TrueZK, building the future of modular
-        blockchains networks.
-        <br />
-        <br />
-        I love to work with React, TypeScript, and Node.js. I'm also a fan of
-        Rust and WebAssembly. I'm always looking for new opportunities to learn
-        and grow.
-        <br />
-        <br />
-        I'm also a huge fan of open-source software and I love to contribute to
-        them. Me and my friends are working on a project called{" "}
-        <span class="underline ">
-          {" "}
-          <a
-            href="https://keyshade.xyz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Keyshade.
-          </a>{" "}
-        </span>
-        Keyshade is a configuration management tool dev teams. It's built with
-        Typescript, React, Node.js and Rust and it's open-source. We are gonna
-        launch it soon.
-      </div>
+      <Bio />
       <Saperator />
       <div class="flex flex-col gap-10">
         <div class="text-middle">Work Experience</div>
+        <div class="items-center gap-10 text-sm font-light text-middle md:flex">
+          <div class="w-32">Sep '24 - Present</div>
+          <div class="flex items-center">
+            Sr Full-stack Dev at{" "}
+            <span>
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="m-1"
+              >
+                <path
+                  d="M1.75096 11.7054V12.8185H2.58303C2.65465 12.8194 2.72567 12.8051 2.79153 12.7765C2.85739 12.748 2.91666 12.7057 2.96553 12.6526C3.0144 12.5994 3.0518 12.5365 3.07533 12.4678C3.09887 12.3991 3.10803 12.3262 3.10221 12.2537C3.10742 12.1819 3.09775 12.1098 3.07385 12.0421C3.04994 11.9743 3.01232 11.9124 2.96341 11.8603C2.9145 11.8082 2.85538 11.7671 2.78987 11.7396C2.72436 11.7121 2.6539 11.6988 2.58303 11.7007L1.75096 11.7054ZM1 11.0394H2.65025C2.81158 11.0322 2.97268 11.0582 3.12384 11.1159C3.27499 11.1736 3.41307 11.2618 3.52974 11.3752C3.64642 11.4885 3.73927 11.6247 3.80271 11.7755C3.86615 11.9263 3.89885 12.0886 3.89885 12.2525C3.89885 12.4165 3.86615 12.5788 3.80271 12.7296C3.73927 12.8803 3.64642 13.0165 3.52974 13.1299C3.41307 13.2432 3.27499 13.3314 3.12384 13.3891C2.97268 13.4469 2.81158 13.4729 2.65025 13.4657H1.75096V14.9906H1V11.0394Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M7.91865 14.9906H7.08889L5.88365 11.9406L4.6761 14.9906H3.8811L5.52208 11.0393H6.27767L7.91865 14.9906Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M8.91978 11.7053V12.7385H9.63134C9.70184 12.744 9.77271 12.7346 9.83948 12.711C9.90624 12.6873 9.96747 12.6499 10.0193 12.601C10.0711 12.5522 10.1124 12.493 10.1406 12.4271C10.1687 12.3612 10.1832 12.2902 10.183 12.2184C10.1833 12.1468 10.1688 12.0761 10.1406 12.0105C10.1123 11.945 10.0709 11.8862 10.019 11.8379C9.96703 11.7896 9.90572 11.7528 9.83896 11.73C9.7722 11.7072 9.70148 11.6988 9.63134 11.7053H8.91978ZM8.17114 15V11.0393H9.75418C9.9085 11.0359 10.0619 11.0638 10.2055 11.1214C10.3491 11.179 10.4798 11.2651 10.5902 11.3747C10.7005 11.4843 10.7881 11.6152 10.848 11.7597C10.9078 11.9041 10.9386 12.0593 10.9386 12.216C10.9372 12.4447 10.8688 12.6678 10.7421 12.8568C10.6154 13.0459 10.436 13.1923 10.227 13.2774L11.1981 14.9906H10.3498L9.46446 13.3762H8.91978V14.9906L8.17114 15Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M12.2366 11.0393V12.7149L13.764 11.0393H14.705L12.8855 12.9926L14.749 14.9906H13.7477L12.2366 13.3362V14.9906H11.4856V11.0393H12.2366Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M14.99 11.0393H17.4422V11.7053H15.7409V12.6819H17.3866V13.3291H15.7409V14.3246H17.4422V14.9906H14.99V11.0393Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M18.7262 11.7053V12.7385H19.44C19.5104 12.744 19.5812 12.7346 19.6479 12.711C19.7145 12.6873 19.7756 12.6498 19.8272 12.6009C19.8789 12.552 19.9199 12.4928 19.9478 12.4269C19.9758 12.3611 19.9899 12.2901 19.9894 12.2184C19.9896 12.1471 19.9753 12.0765 19.9472 12.0111C19.9191 11.9458 19.8778 11.8871 19.8262 11.8388C19.7745 11.7906 19.7134 11.7538 19.647 11.7308C19.5805 11.7078 19.51 11.6991 19.44 11.7053H18.7262ZM17.9775 15V11.0393H19.5606C19.7149 11.0359 19.8683 11.0638 20.0119 11.1214C20.1554 11.179 20.2862 11.2651 20.3966 11.3747C20.5069 11.4843 20.5945 11.6152 20.6544 11.7597C20.7142 11.9041 20.745 12.0593 20.745 12.216C20.7436 12.4447 20.6752 12.6678 20.5485 12.8568C20.4218 13.0459 20.2424 13.1923 20.0334 13.2774L20.9999 14.9883H20.1562L19.2709 13.3739H18.7262V14.9883L17.9775 15Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M1 10.0251V6.07385H3.4522V6.73985H1.74864V7.72119H3.39657V8.37071H1.74864V10.0251H1Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M7.25325 10.0251H6.42581L5.21825 6.97753L4.01301 10.0251H3.21802L4.85668 6.07385H5.61459L7.25325 10.0251Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M9.95806 10.0251H7.50586V6.07385H8.25682V9.35911H9.95806V10.0251Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M10.8203 8.80137C10.8759 9.20615 11.1657 9.46031 11.6431 9.46031C12.0789 9.46031 12.3014 9.25321 12.3014 8.96846C12.3014 8.73313 12.1159 8.55663 11.8216 8.48367L11.161 8.31423C10.4657 8.13538 10.125 7.77767 10.125 7.18698C10.125 6.48098 10.7091 6.01031 11.4716 6.01031C11.83 5.99103 12.1823 6.11088 12.4569 6.34556C12.7315 6.58024 12.9079 6.91218 12.9503 7.27406H12.2156C12.1919 7.09254 12.1017 6.92677 11.9629 6.80986C11.8241 6.69294 11.647 6.63348 11.467 6.64336C11.1263 6.64336 10.8713 6.82222 10.8713 7.13521C10.8713 7.38702 11.0498 7.53528 11.3488 7.60588L12.007 7.78238C12.7348 7.973 13.0454 8.31188 13.0454 8.90492C13.0454 9.57562 12.4937 10.0816 11.6385 10.0816C10.7832 10.0816 10.1551 9.55444 10.0925 8.78961L10.8203 8.80137Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M15.4977 6.00086C15.8227 6.00068 16.1433 6.07761 16.4338 6.22551C16.7243 6.37342 16.9768 6.58822 17.1711 6.85277L16.5893 7.28814C16.4681 7.10984 16.307 6.96317 16.1193 6.86011C15.9316 6.75705 15.7226 6.7005 15.5093 6.6951C15.1657 6.70965 14.841 6.85846 14.603 7.11041C14.365 7.36237 14.2321 7.69797 14.2321 8.04709C14.2321 8.3962 14.365 8.73181 14.603 8.98377C14.841 9.23572 15.1657 9.38453 15.5093 9.39908C15.7257 9.40104 15.9393 9.34829 16.1306 9.24558C16.322 9.14288 16.4852 8.99345 16.6056 8.81075L17.1873 9.24612C16.9959 9.51313 16.7443 9.72977 16.4536 9.87797C16.1629 10.0262 15.8415 10.1016 15.5162 10.098C15.2456 10.1085 14.9757 10.0636 14.7225 9.966C14.4693 9.86838 14.2381 9.72004 14.0425 9.52981C13.847 9.33958 13.6911 9.11135 13.5843 8.8587C13.4774 8.60605 13.4217 8.33414 13.4204 8.05918C13.4192 7.78421 13.4724 7.5118 13.577 7.25816C13.6816 7.00453 13.8354 6.77485 14.0292 6.5828C14.223 6.39075 14.4529 6.24026 14.7052 6.14028C14.9575 6.04031 15.227 5.99289 15.4977 6.00086V6.00086Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M17.5256 10.0251V6.07385H18.2743V7.71178H19.9825V6.07385H20.7334V10.0251H19.9825V8.37777H18.2743V10.0251H17.5256Z"
+                  fill="#5C5C5C"
+                />
+              </svg>
+            </span>{" "}
+            Falsch Parker
+          </div>
+        </div>
         <div class="gap-10 text-sm font-light text-middle md:flex">
-          <div class="w-32">June '23</div>
+          <div class="w-32">June '23 - Sep '24</div>
           <div class="flex items-center">
             Founding Full-stack Dev at{" "}
             <span>
