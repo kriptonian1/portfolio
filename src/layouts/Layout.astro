@@ -1,0 +1,32 @@
+---
+import FooterGradBlur from "../components/FooterGradBlur.astro";
+import HeadGradBlur from "../components/HeadGradBlur.astro";
+import { NavDocker } from "../components/nav-docker/nav-docker";
+
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kriptonian | Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="I'm a full-stack developer with a passion for building web applications."
+    />
+  </head>
+  <body>
+    <HeadGradBlur />
+    <main class="flex flex-col items-center antialiased">
+      <slot />
+      <NavDocker client:idle />
+      <div class="h-40"></div>
+    </main>
+    <FooterGradBlur />
+  </body>
+</html>
