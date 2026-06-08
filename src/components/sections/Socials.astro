@@ -1,0 +1,15 @@
+---
+import { SOCIALS } from "../../constants/socials";
+---
+
+<div class="text-middle mt-10 flex gap-x-6 font-light md:mt-0">
+  {
+    SOCIALS.map(({ name, link }) => {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {name}
+        </a>
+      );
+    })
+  }
+</div>

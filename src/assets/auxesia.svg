@@ -1,0 +1,17 @@
+<svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path d="M1 19V12.4359L4.21324 15.7179L1 19Z" fill="#5C5C5C" />
+                <path
+                  d="M5.88971 14.3504V7.64957L10.5 12.4359V19L5.88971 14.3504Z"
+                  fill="#5C5C5C"
+                />
+                <path
+                  d="M10.5 9.5641V3L20 12.2991L19.8603 19L10.5 9.5641Z"
+                  fill="#5C5C5C"
+                />
+              </svg>
