@@ -1,0 +1,45 @@
+---
+import PrespectiveBook from "../prespective-book/PrespectiveBook.astro";
+import SmallGaintsImg from "@/assets/raster/books/small-giants.png";
+import HookedImg from "@/assets/raster/books/hooked.png";
+import CleanCodeImg from "@/assets/raster/books/clean-code.png";
+---
+
+<div class="flex flex-col gap-10">
+  <div class="text-middle">Books I am Reading</div>
+  <div class="gap grid gap-y-10 md:grid-cols-3">
+    <a
+      href="https://www.goodreads.com/book/show/100467"
+      class="w-fit"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <PrespectiveBook size="sm" coverImage={SmallGaintsImg} />
+    </a>
+    <a
+      href="https://www.goodreads.com/book/show/22668729"
+      class="w-fit"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <PrespectiveBook
+        size="sm"
+        coverImage={HookedImg}
+        class={"bg-[#DFD234]"}
+      />
+    </a>
+
+    <a
+      href="https://www.goodreads.com/book/show/3735293"
+      class="w-fit"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <PrespectiveBook
+        size="sm"
+        coverImage={CleanCodeImg}
+        class={"bg-[#0E1B1D]"}
+      />
+    </a>
+  </div>
+</div>
