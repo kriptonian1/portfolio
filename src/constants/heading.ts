@@ -1,6 +1,6 @@
 export const HEADING_DETAILS = {
-  name: "Sawan Bhattacharya",
-  currentCompany: "Falsch Parker",
-  country: "India",
+  name: "Sawan",
+  currentCompany: "Keyshade",
+  country: "In",
   city: "Kolkata",
 };
