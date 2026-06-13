@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AnimatedTab } from "./animated-tab";
+import { motion } from "motion/react";
 
 interface Tabs {
   name: string;
@@ -9,7 +10,7 @@ interface Tabs {
 export const NavDocker = () => {
   const tabs: Tabs[] = [
     { name: "About", href: "/" },
-    { name: "Animations", href: "https://ui.kriptonian.xyz/" },
+    { name: "Blogs", href: "https://ui.kriptonian.xyz/" },
     { name: "Resume", href: "/CV_Sawan_Bhattacharya.pdf" },
     {
       name: "Contact",
@@ -20,7 +21,21 @@ export const NavDocker = () => {
   const [currentHoverTab, setCurrentHoverTab] = useState<string>(tabs[0].name);
 
   return (
-    <nav className="shadow-nav border-cream/20 text-cream fixed bottom-10 z-20 rounded-full border bg-[#0c0c0cd1] p-2 text-sm backdrop-blur">
+    <motion.nav
+      initial={{
+        opacity: 0,
+        bottom: -40,
+        filter: "blur(10px)",
+        animationDelay: 100,
+      }}
+      animate={{ opacity: 1, bottom: 40, filter: "blur(0px)" }}
+      transition={{
+        type: "keyframes",
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      }}
+      className="shadow-nav border-cream/20 text-cream fixed bottom-10 z-20 rounded-full border bg-[#0c0c0cd1] p-2 text-sm backdrop-blur"
+    >
       <div className="relative flex">
         {tabs.map((tab) => (
           <a
@@ -38,6 +53,6 @@ export const NavDocker = () => {
           </a>
         ))}
       </div>
-    </nav>
+    </motion.nav>
   );
 };
