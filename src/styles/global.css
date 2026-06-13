@@ -10,12 +10,9 @@
 }
 
 @layer base {
-  body: {
-    @apply bg-cream;
-  }
   html,
   body {
-    @apply m-0 h-full w-full;
+    @apply bg-cream m-0 h-dvh w-full;
   }
 }
 
